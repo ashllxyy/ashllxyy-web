@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ashllxyy - Home</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT ME</a></li>
+                <li><a href="">MY SKILLS</a></li>
+                <li><a href="">MY EDUCATION</a></li>
+                <li><a href="">MY PROJECTS</a></li>
+                <li><a href="">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class = "landing" id = "parallax">
+        
+        <div>
+        <h1>Hi, I am ashllxyy</h1>
+        <h3> Welcome, User </h3>
+    </div>
+    
+    </div>
+    <script type = "text/javascript">
+        (function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#parallax");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+
+})();
+    </script>
+    <div class = "ukiyo">
+        <div class = "about">
+            <img src = "avatar.jpeg">
+        </div>
+        <div class = "about">
+            <h2>About me</h2>
+            <p> Hello,</p>
+            <p>I am Arunesh Unnithan.</p>
+            <p>I'm from Mumbai, Maharashtra.</p>
+            <p>I love to draw and play the geeetar.</p>
+        </div> 
+    </div>
+
+    <h2>My skills</h2>
+    <ul>
+        <li>SQL</li>
+        <li>C++</li>
+        <li>HTML/CSS</li>
+    </ul>
+    <h2>My Education</h2>
+    <ul>
+        <li>Currently studying in NIT Trichy</li>
+        <li>Did my Highschool in JOHN XXIII HIGH SCHOOL, Agashi, Virar[W]</li>
+        <li>Did my Juniors in Pravinkumar G. Vora High School, Mira Road [E]</li>
+    </ul>
+    <div>
+        <h2>My Projects</h2>
+        <ul class = "myProjects">
+            <li class = "Project"><a href = "https://github.com/ashllxyy/TRINIT-TrichyWaale-ML03">Created a Machine learning model as a part of Tri-NIT Hackathon using Python</a></li>
+            <li class = "Project">Created a School Management Database in SQL</li>
+            <li class = "Project">Very big project that has not been done yet :D</li>
+        </ul>
+
+    </div>
+    
+    <h2>
+        Contact Me
+    </h2>
+    <p>  Email: aruneshunnithan@gmail.com <br> Phone: 9004291402 <br>
+    Github: <a href = "https://github.com/ashllxyy"> ashllxyy</a>
+    </p>
+ </body>
+ </html>

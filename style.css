@@ -1,0 +1,153 @@
+h1{
+    color: blueviolet;
+    font-size: 64px;  
+}
+h3{
+    color: white;
+    font-size: 37px;
+}
+h2{
+    color: white;
+}
+h4{
+    color: white;
+}
+h5{
+    color: white;
+}
+
+body{
+    background-color: rgb(12, 12, 12);
+    font-family: 'Montserrat', sans-serif;
+    color: #F2CD5C;
+}
+
+.landing{
+    background-image: : url(parallax.png) linear-gradient(20, 30, 2, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.landing nav{
+    display: flex;
+    justify-content: right;
+    margin-top: 100px;
+    align-items: top;
+    height: 100vh;
+}
+.ukiyo{
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.about{
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 40%;
+    font-size: 25px;
+}
+.about img{
+    width: 80%;
+    margin-right: 100px;
+    border-radius: 30px;
+    border-style:groove;
+    border-color: white;
+}
+
+.about p{
+    text-align: left;
+    margin-left: 100px;
+    justify-content: left;
+    font-size: 25px;
+}
+.about h2{
+    text-align: left;
+    margin-left: 100px;
+}
+
+
+.myProjects{
+    display: flex;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.Project{
+    padding: 20px;
+    color: white;
+    font-weight: bold
+    font-size: 20px;
+    border-radius: 20px;
+    width: 33%;
+    background-color: darkgrey;
+    height: 20vh;
+}
+.Project:hover{
+    background-color: white;
+    color: black;
+}
+
+#parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:url(parallax.png),
+    url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png),
+    url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    background-size:cover;
+    bac
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+    
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 13 px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: blueviolet;
+    display: block;
+    margin: auto;
+}
