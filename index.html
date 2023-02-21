@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ashllxyy - Home</title>
     <link rel = "stylesheet" href = "style.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -23,6 +25,7 @@
             </ul>
         </div>
     </nav>
+
     <div class = "landing" id = "parallax">
         
         <div>
@@ -33,10 +36,8 @@
     </div>
     <script type = "text/javascript">
         (function() {
-    // Add event listener
     document.addEventListener("mousemove", parallax);
     const elem = document.querySelector("#parallax");
-    // Magic happens here
     function parallax(e) {
         let _w = window.innerWidth/2;
         let _h = window.innerHeight/2;
@@ -64,20 +65,37 @@
             <p>I love to draw and play the geeetar.</p>
         </div> 
     </div>
-
+<div class = "mySkills">
     <h2>My skills</h2>
+    <div class = "wrapper">
+        
+        <div class = "static">I'm a </div>
+        <ul class = "dynamic">
+            <li><span>DESIGNER</span></li>
+            <li><span>DEVELOPER</span></li>
+            <li><span>GAMER</span></li>
+            <li><span>MUSICIAN</span></li>
+        </ul> 
+    </div>
+    <div class = "wrapper">
     <ul>
-        <li>SQL</li>
-        <li>C++</li>
-        <li>HTML/CSS</li>
+        <li class = "skill">SQL</li><br>
+        <li class = "skill">C++</li><br>
+        <li class = "skill">HTML/CSS</li><br>
     </ul>
+    </div>
+</div>
+<br>
+<div class = "myEducation">
     <h2>My Education</h2>
     <ul>
-        <li>Currently studying in NIT Trichy</li>
-        <li>Did my Highschool in JOHN XXIII HIGH SCHOOL, Agashi, Virar[W]</li>
-        <li>Did my Juniors in Pravinkumar G. Vora High School, Mira Road [E]</li>
+        <li class = "edu">Currently studying in NIT Trichy</li><br>
+        <li class = "edu">Went to SVP Jr College of Commerce<br> and Science</li><br>
+        <li class = "edu">Did my Highschool in JOHN XXIII HIGH <br> SCHOOL, Agashi, Virar[W]</li><br>
+        <li class = "edu">Did my Juniors in Pravinkumar G. Vora<br> High School, Mira Road [E]</li><br>
     </ul>
-    <div>
+</div>
+    <div class = "projecthead">
         <h2>My Projects</h2>
         <ul class = "myProjects">
             <li class = "Project"><a href = "https://github.com/ashllxyy/TRINIT-TrichyWaale-ML03">Created a Machine learning model as a part of Tri-NIT Hackathon using Python</a></li>
@@ -86,12 +104,13 @@
         </ul>
 
     </div>
-    
+<div class = "contactMe">
     <h2>
         Contact Me
     </h2>
     <p>  Email: aruneshunnithan@gmail.com <br> Phone: 9004291402 <br>
     Github: <a href = "https://github.com/ashllxyy"> ashllxyy</a>
     </p>
+</div>
  </body>
  </html>
