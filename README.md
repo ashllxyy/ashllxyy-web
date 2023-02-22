@@ -1,3 +1,3 @@
 # ashllxyy-web
 
-A practise portfolia test page to practise HTML,CSS,JS
+A personal portfolio test page to practise HTML,CSS,JS
